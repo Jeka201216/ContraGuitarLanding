@@ -88,10 +88,22 @@ h2 {
   /* background-position: top right; */
 }
 
-@media screen and (min-width: 0px) and (max-width: 1024px) {
-    .info {
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/ContraGuitar2.jpg) no-repeat bottom right;
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .chat_header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
     }
+    .chat_content {
+      margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .info {
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/ContraGuitar2.jpg) no-repeat bottom right;
+  }
 }
 
 .button {
@@ -338,7 +350,6 @@ footer {
   text-align: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  z-index: 100;
 }
 
 .chat_header h1{
